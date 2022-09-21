@@ -1,0 +1,37 @@
+@media print {
+
+     .formulario *{
+        display: none;
+    }
+
+    .hide *{
+        display: none;
+    }
+    .contenedorQR {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .bar{
+        display: flex;
+        padding-left: 2;
+    }
+    .img{
+        display: flex;
+        padding-top: 1cm;
+        padding-left: 3cm;
+        padding-bottom: 0.5cm;
+    }
+    .mc {
+        display: flex;
+        padding-left: 2.5cm;
+    }
+}
+
+@page {
+
+    size: auto;
+    margin: 0mm;
+    margin-right: 8cm;
+} 

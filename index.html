@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador QR y BarCodes</title>
+
+    <!--  Fots y estilos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <!-- CDNs para QR y codigo de barras + app -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/JsBarcode.all.min.js"></script>
+
+
+
+</head>
+
+<body id="body">
+            <header>
+                <img class="logo" src="img/ford.svg" alt="mk logo">
+                <nav>
+                    <ul class="nav_link">
+                        <a class="bajar" href="#"><button>Configurar Impresora</button></a>
+                        <a class="bajar" href="#"><button>Bajar PDF</button></a>
+                    </ul>
+                </nav>
+                <a class="bajar" href="mailto:mkildoff@ford.com"><button>Contacto</button></a>
+            </header>
+
+    
+
+    <div class="contenedor" id="contenedor">
+        <form action="" id="formulario" class="formulario">
+
+            <input type="text" id="input" placeholder="Ingresa el codigo de ASSET" required />
+            <button class="btn">Generar QR y BarCode</button>
+
+        </form>
+                 <div id="save">
+                    <img src="img/ford.jpg" class="img" >
+                                 <div id="contenedorQR" class="contenedorQR"></div>       
+                                 
+                                    <canvas id="bar" class="bar"></canvas>
+                </div>
+
+        <div 
+            class="hide"><button class="btn-prn" id="prn" >Imprimir</button>
+        </div>
+        <div class="mc">
+            <h3>Mantenimiento Central</h3>
+        </div>
+        
+    </div>
+</body>
+
+
+</html>
